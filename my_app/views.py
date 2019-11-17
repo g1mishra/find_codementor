@@ -52,6 +52,7 @@ def new_search(request):
             final_postings.append(tup)
             if final_postings[0][0] == "{{item['display_name']}}":
                 error="Error!"
+                break
     search_for_frontend={
         'search':search,
         'final_postings': final_postings[:-1],

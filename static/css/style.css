@@ -3,6 +3,9 @@
     overflow: hidden;
     font-size: 14px;
 }
+body{
+    background: whitesmoke;
+}
 
 .name{
     font-size: 20px;
@@ -22,11 +25,21 @@
 .row {
     text-transform: capitalize;
 }
+
 .main-text{
     text-transform: capitalize;
     text-align: center;
     word-wrap: none;
 }
+.grey-text{
+    text-transform: none;
+    font-size: medium;
+    text-align: start;
+    padding: 10px 20px;
+}
 .col.s4{
     margin:10px 0;
+    font-weight: 500;
 }
+
+
