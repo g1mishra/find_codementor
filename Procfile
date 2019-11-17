@@ -1,1 +1,1 @@
-web: gunicorn hellodjango.wsgi
+web: gunicorn projectname.wsgi --log-file -
