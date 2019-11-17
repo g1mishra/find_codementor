@@ -17,9 +17,7 @@ def new_search(request):
         error="Error!"
     else:
         error=""
-        current_time = datetime.datetime.now() 
-        obj=Search(search=search,created=current_time)
-        obj.save()
+        
         final_url = Base_Mentor_Url.format(quote_plus(search))
         response = requests.get(final_url)
         data = response.text
