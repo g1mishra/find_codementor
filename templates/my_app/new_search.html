@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+    {% if error == "Error!" %}
+        <div class="col s6">
+            <div class="card-panel deep-orange darken-1">
+                <div class="row">
+                    <div class="col s8 white-text">
+                        <h5>{{error | title }}</h5>
+                        <h6>Please Gives The Valid Input</h6>
+                    </div>
+                    <div class="col s4 right-align">
+                        <br>
+                            <a href="/" 
+                            class="waves-effect waves-light modal-trigger btn btn-large white orange-text btn-flat">
+                            Ok
+                          </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+      </div>
+      <h2 class="center-align">{{search | title }} Mentors</h2>
+          <div class="row">
+              {% for post in final_postings %}
+              <div class="col s8 m5 l5 xl4 offset-s2 offset-l1 offset-m1 ">
+                  <div class="card">
+                      <div class="card-image">
+                          <a href="{{ post.1 }}"><img src="{{post.3}}" class="res-img"alt=""></a>
+                      </div>
+                      <div class="card-content orange lighten-1 ">
+                          <p class="name">{{post.0}}</p>
+                      </div>
+                      <div class="card-action teal darken-1">
+                          <a class="brown-text text-lighten-4 " href="{{ post.1 }}">View Profile: Price {{ post.2 }}</a>
+                      </div>
+                  </div>
+              </div>
+              {% endfor %}
+          </div>
+    {% endif %}
+{% endblock content %}

@@ -1,0 +1,32 @@
+.card-action,.card-content{
+    height: 80px; /* Your height here */
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.name{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.card-image {
+    height: 250px; /* Your height here */
+    overflow: hidden;
+}
+.res-img{
+    height: 100%;
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(150, 146, 146, 0.363);
+}
+.row {
+    text-transform: capitalize;
+}
+.main-text{
+    text-transform: capitalize;
+    text-align: center;
+    word-wrap: none;
+}
+.col.s4{
+    margin:10px 0;
+}
