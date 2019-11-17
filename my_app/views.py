@@ -2,7 +2,8 @@ from django.shortcuts import render
 from bs4 import BeautifulSoup
 import requests
 from requests.compat import quote_plus
-from . import models
+from .models import Search
+import datetime 
 Base_Mentor_Url="https://www.codementor.io/experts?q={}"
 Base_Post_Url = "https://www.codementor.io{}"
 
@@ -16,7 +17,9 @@ def new_search(request):
         error="Error!"
     else:
         error=""
-        models.Search.objects.create(search=search)
+        current_time = datetime.datetime.now() 
+        obj=Search(search=search,created=current_time)
+        obj.save()
         final_url = Base_Mentor_Url.format(quote_plus(search))
         response = requests.get(final_url)
         data = response.text
