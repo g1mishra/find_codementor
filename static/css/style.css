@@ -32,7 +32,7 @@ body{
     word-wrap: none;
 }
 .col s12.main-text{
-text-align : start; 
+text-align : justify ; 
 }
 .grey-text{
     text-transform: none;
