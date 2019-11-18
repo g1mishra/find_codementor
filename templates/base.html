@@ -21,7 +21,7 @@
 <body>
     <nav class="#00796b teal darken-2">
         <div class="container nav-wrapper ">
-            <a href="/" class="brand-logo">Find Codementor</a>
+            <a href="/" class="brand-logo left ">Find Codementor</a>
             <ul id="nav-mobile" class="right">
                 <li><a href="/" class="btn-floating pulse"><i class="material-icons">home</i></a></li>
             </ul>
@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row">
                 <br>
-                <h1 class="col s10 offset-s1 main-text"> Do you want to learn Programming ? <br>
+                <h1 class="col s12 m10 offset-m1 main-text"> Do you want to learn Programming ? <br>
                     find your code mentor. </h1><br>
             
             <div class="col s4">
@@ -63,7 +63,7 @@
         <form action="{% url 'new_search' %}" method="post">
                 {% csrf_token %}
                 <div class="row">
-                        <div class="col s6">
+                        <div class="col s12 m6">
                           <div class="row">
                             <div class="input-field col s12">
                               <i class="material-icons prefix">search</i>
@@ -71,7 +71,7 @@
                               <label for="Programming-language">Programming language</label>
                               
                             </div>
-                            <div class="input-field col s8 offset-s4">
+                            <div class="input-field col s12 m8 offset-m2">
                                     <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">Search
                                             <i class="material-icons right">send</i>
                                     </button>
@@ -88,12 +88,12 @@
         <footer class="page-footer red darken-2">
                 <div class="container">
                   <div class="row">
-                    <div class="col l6 s12">
+                    <div class="col l6 s6">
                       <h4 class="white-text">Find Codementor</h4>
                       <p class="grey-text text-lighten-4">This site is developed for pepole who want 
                                     to learn Programming language. If you have desire to code, find your mentor and start learning and doing.</p>
                     </div>
-                    <div class="col l4 offset-l2 s12">
+                    <div class="col l4 offset-l2 s6">
                       <h5 class="white-text">Links</h5>
                       <ul>
                         <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/checktolearn1/">Facebook</a></li>
