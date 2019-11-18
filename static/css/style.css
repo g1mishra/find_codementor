@@ -34,9 +34,8 @@ body{
 }
 .grey-text{
     text-transform: none;
-    font-size: medium;
+    font-size: small;
     text-align: start;
-    padding: 10px 20px;
 }
 .col.s4{
     font-weight: 500;
