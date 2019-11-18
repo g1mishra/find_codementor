@@ -28,9 +28,10 @@ body{
 
 .main-text{
     text-transform: capitalize;
-    text-align: center;
+    text-align: start;
     word-wrap: none;
 }
+
 .grey-text{
     text-transform: none;
     font-size: small;
