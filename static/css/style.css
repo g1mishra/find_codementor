@@ -28,10 +28,12 @@ body{
 
 .main-text{
     text-transform: capitalize;
-    text-align: start;
+    text-align: center;
     word-wrap: none;
 }
-
+.col s12.main-text{
+text-align : start; 
+}
 .grey-text{
     text-transform: none;
     font-size: small;
