@@ -30,6 +30,7 @@ body{
     text-transform: capitalize;
     text-align: center;
     word-wrap: none;
+    font-size : 90%;
 }
 .grey-text{
     text-transform: none;
@@ -38,7 +39,6 @@ body{
     padding: 10px 20px;
 }
 .col.s4{
-    margin:10px 0;
     font-weight: 500;
 }
 
